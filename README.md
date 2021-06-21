@@ -12,11 +12,11 @@ This analysis was done as part of the ```Data Analysis and Visualization``` cour
 
 ### Usage
 
-The analysis is presented in ```PriceDispersionAnalysisReport.pdf``` and the code for analysis in ```price_dispersion_analysis.R```. The images used in the report are present separately for easy access to the information.
+The analysis is presented in ```PriceDispersionAnalysisReport.pdf``` and the code for analysis in ```price_dispersion_analysis.R```. In addition, the images used in the report are present separately for easy access to the information.
 
 ## Authors
 
-Saumya Gupta ```guptasaumya79@gmail.com```
+Saumya Gupta ```guptasaumya79@gmail.com```  
 M. M. Usman Zahid ```uzahid@gmail.com```
 
 ## License
