@@ -7,20 +7,20 @@
 ##                        Data Analysis and Visualization course;
 ##                        Dalarna University
 ##
-## Author: Saumya Gupta, M.M. Usman Zahid
+## Authors: Saumya Gupta, M.M. Usman Zahid
 ##
 ## Date Created: 2021-02-28
 ##
-## Copyright (c) Saumya Gupta, 2018 (To do)
+## Copyright (c) 2021 Saumya Gupta
 ##
 ## Email: h20saugu@du.se, v21miaza@du.se
 
 
-## before proceeding, we recommend the reader use Ctrl+Shift+O 
+## before proceeding, we recommend Windows Rstudio user to use Ctrl+Shift+O
 ## to see document outline
 
 
-## set the working directory.
+## set working directory.
 # setwd(
 #   'C:/Users/gupta/OneDrive/Documents/MS-DS/AMI23A/Part3/HomeAssignment/PriceDispersionAnalysis/'
 # )
@@ -36,6 +36,7 @@ library(dplyr)
 library(tidyverse)
 library(dtw)
 library(NbClust)
+
 
 ## create DTW Suite suggested method to help create dissimilarity matrix out of
 ## time series of different lengths
@@ -179,7 +180,7 @@ findDTWHCluster <- function(id, product_ts, k_val = 3) {
 
 
 ## create cluster validation function using NbClust to
-## validate the cluster and returns optimal partitioning information
+## validate clusters and returns optimal partitioning information
 bestNbClust <- function(id, product_ts) {
   product_data_NbClust <- as.data.frame(product_ts)
   # Get store IDs as row names
@@ -301,7 +302,7 @@ ggplot(everyday_price_aggregates,
   theme_minimal()
 
 ### Fig. 5 ----
-## show the curious case of product #1260
+## show case of product #1260
 data_Xbox360 %>%
   filter(product_id == 2687705,
          store_id == 1260,
@@ -500,7 +501,7 @@ for (product in product_with_store_count$product_id[1:30]) {
 }
 
 #### Fig. 8, 9 (Report Fig. 4) ----
-## cluster product # 1341635 (change function a bit to get the exact figure)
+## cluster product # 1341635 (change function a bit to get exact figure)
 findDTWHCluster(1341635,
                 product_ts_list$`1341635`,
                 2)
