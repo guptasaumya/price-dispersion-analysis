@@ -12,7 +12,7 @@ This analysis was done as part of the ```Data Analysis and Visualization``` cour
 
 ### Usage
 
-The analysis is presented in ```PriceDispersionAnalysisReport.pdf``` and the code for analysis in ```price_dispersion_analysis.R```. In addition, the images used in the report are present separately for easy access to the information.
+The analysis is presented in ```PriceDispersionAnalysisReport.pdf``` and the code for analysis in ```price_dispersion_analysis.R```. The code is in R; hence there is a requirement of R and optional tools like RStudio. In addition, the images used in the report are present separately for easy access to the information.
 
 ## Authors
 
